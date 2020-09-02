@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ButterflyApp</string>
+    <string name="butterflies">Butterflies</string>
+    <string name="danaus_n_plexippus">Danaus\n Plexippus</string>
+    <string name="morpho_n_pelides">Morpho\n Pelides</string>
+    <string name="delias_eucharia">Delias Eucharia</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvButterflies"
+        app:layout_constraintTop_toBottomOf="@+id/tvButterflies"
+        tools:text="[quote of the day]" />
+
+    <TextView
+        android:id="@+id/tvButterflies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/butterflies"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivButterfly1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/butterflies"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@id/ivButterfly2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuote"
+        app:srcCompat="@mipmap/butterfly_1" />
+
+    <TextView
+        android:id="@+id/tvButterfly1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/danaus_n_plexippus"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivButterfly1"
+        app:layout_constraintStart_toStartOf="@+id/ivButterfly1"
+        app:layout_constraintTop_toBottomOf="@+id/ivButterfly1"/>
+
+    <ImageView
+        android:id="@+id/ivButterfly2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivButterfly1"
+        app:layout_constraintTop_toTopOf="@+id/ivButterfly1"
+        app:srcCompat="@mipmap/butterfly_2"
+        android:contentDescription="@string/butterflies"/>
+
+    <TextView
+        android:id="@+id/tvButterfly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/morpho_n_pelides"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivButterfly2"
+        app:layout_constraintStart_toStartOf="@+id/ivButterfly2"
+        app:layout_constraintTop_toBottomOf="@+id/ivButterfly2" />
+
+    <ImageView
+        android:id="@+id/ivButterfly3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivButterfly2"
+        app:layout_constraintStart_toStartOf="@+id/ivButterfly1"
+        app:layout_constraintTop_toBottomOf="@+id/tvButterfly1"
+        app:srcCompat="@mipmap/butterfly_3"
+        android:contentDescription="@string/butterflies"/>
+
+    <TextView
+        android:id="@+id/tvButterfly3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delias_eucharia"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivButterfly3"
+        app:layout_constraintStart_toStartOf="@+id/ivButterfly3"
+        app:layout_constraintTop_toBottomOf="@+id/ivButterfly3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
