@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         AsyncHttpClient client = new AsyncHttpClient();
 
-        //use JSON handler because the Movie API is returning a JSON object
+        //fetch quote
         client.get(QUOTES_URL, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
@@ -58,23 +58,5 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "onFailure");
             }
         });
-
-        Log.i("yup", "ok");
-
-//            public void onSuccess(int statusCode, Headers headers, JSON json) {
-//                Log.d(TAG, "onSuccess");
-//                JSONObject jsonObject = json.jsonObject;
-//
-//                //unhandled exception, the key "results" might not exist
-//                try {
-//                    JSONArray results  = jsonObject.getJSONArray("results");
-//                    Log.i(TAG, "Results: " + results.toString());
-//                    movies = Movie.fromJsonArray(results);
-//                    Log.i(TAG, "Movies: " + movies.size());
-//                } catch (JSONException e) {
-//                    Log.e(TAG, "Hit json exception", e);
-//                }
-//            }
     }
-
 }
